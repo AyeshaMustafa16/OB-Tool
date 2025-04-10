@@ -1,7 +1,7 @@
 # Website Builder
 
 ## Overview
-Portal Web Builder is a comprehensive web customization tool that allows users to design and customize website headers, footers, and various page sections through an intuitive interface. The application provides real-time previews of the changes, making it easy for users to build and visualize their website.
+Web Builder is a comprehensive web customization tool that allows users to design and customize website headers, footers, and various page sections through an intuitive interface. The application provides real-time previews of the changes, making it easy for users to build and visualize their websites.
 
 ---------------------------
 Installation Guide
@@ -17,7 +17,7 @@ Make sure you have the following installed:
 1. Node.js (v18 or later recommended)  
    Download: https://nodejs.org/
 
-2. PNPM - Fast, disk space efficient package manager  
+2. PNPM - Fast, disk space-efficient package manager  
    Install PNPM globally:  
    `npm install -g pnpm`
 
