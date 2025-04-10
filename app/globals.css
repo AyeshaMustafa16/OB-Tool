@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 339 75% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 339 75% 53%;
+  --radius: 0.5rem;
+
+  --chart-1: 339 75% 53%;
+  --chart-2: 240 67% 61%;
+  --chart-3: 25 95% 53%;
+  --chart-4: 187 75% 53%;
+  --chart-5: 270 67% 61%;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 339 75% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 339 75% 53%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+/* Dropdown menu styles - update to ensure proper nesting */
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu,
+.group:hover .dropdown-menu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+}
+
+.dropdown-menu li:hover .submenu,
+.group-hover\/inner .submenu {
+  display: block;
+}
+
+/* Improve dropdown positioning */
+.group {
+  position: relative;
+}
+
+.group\/inner {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 50;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 200px;
+  z-index: 51;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Search expand animation */
+.search-input-elm {
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover + .search-input-elm,
+.search-input-elm:hover {
+  display: block;
+}
+
+/* Add these specific styles to ensure dropdown menus appear on hover in the preview */
+.header-preview .dropdown-menu,
+.header-preview .submenu {
+  display: none;
+}
+
+.header-preview .group:hover > .dropdown-menu,
+.header-preview .group:hover > div > .dropdown-menu,
+.header-preview .relative:hover > .dropdown-menu,
+.header-preview .relative:hover > div > .dropdown-menu {
+  display: block !important;
+}
+
+.header-preview .group\/inner:hover > .submenu,
+.header-preview .relative:hover > .submenu {
+  display: block !important;
+}
+
+/* Ensure proper positioning */
+.header-preview .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 50;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+}
+
+.header-preview .submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 200px;
+  z-index: 51;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+}
