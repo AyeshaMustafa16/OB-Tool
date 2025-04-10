@@ -6,7 +6,6 @@ Portal Web Builder is a comprehensive web customization tool that allows users t
 ## Prerequisites
 - Node.js 18.x or later
 - npm 9.x or later
-- A Vercel account (for deployment)
 
 ## Installation
 
