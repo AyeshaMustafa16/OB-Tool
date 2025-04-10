@@ -15,8 +15,8 @@ To get started, follow these steps:
 
 Clone the repository:
 
-git clone https://your-repository-url.git
-cd your-project-directory
+git clone (https://github.com/AyeshaMustafa16/OB-Tool.git)
+cd project-directory
 Install dependencies: This project uses pnpm as the package manager. If you don't have it installed, you can get it from pnpm.io. Once installed, run:
 
 pnpm install
